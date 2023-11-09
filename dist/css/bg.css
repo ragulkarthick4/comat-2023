@@ -1,0 +1,54 @@
+/* general settings for section & subheader */
+section,
+#subheader {
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+}
+
+/* background settings for section */
+#section-fun-facts {
+	background: url(../images/background/cta_bg.jpg) fixed;
+}
+
+#section-organised {
+	background: url(../images/background/homebg.webp) fixed;
+}
+
+#section-schedules {
+	background: url(../images/background/cta_bg.jpg) fixed;
+}
+
+/* #section-register {
+	background: url(../images/background/r_schedule_bg.jpg) fixed;
+}
+#section-register::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../images/background/counter-overley.png);
+	background-size: auto;
+	background-size: cover;
+
+} */
+
+#section-important-dates {
+	background: url(../images/background/cta_bg.jpg) fixed;
+}
+
+
+/* media query */
+@media only screen and (max-width: 1199px) {
+	section {
+		-webkit-background-size: auto 100% !important;
+		-moz-background-size: auto 100% !important;
+		-o-background-size: auto 100% !important;
+		background-size: auto 100% !important;
+		background-attachment: scroll !important;
+		background-position: top !important;
+	}
+}
