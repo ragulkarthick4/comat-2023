@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Comat-2023</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <style>
+            
+              body {
+                style="font-family: "Catamaran", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        /* Add responsive styles for images */
+        .w-100 {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Add styles for buttons */
+        .btn-custom {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        /* Add responsive styles for sections */
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Style the table header cells */
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Style odd and even rows differently for better readability */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Add responsive styling for small screens */
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th {
+                text-align: left;
+            }
+
+            /* Hide table headers (labels) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+            }
+
+            td {
+                /* Display each cell as a block */
+                display: block;
+                text-align: right; /* Align the cell content right for small screens */
+            }
+
+            /* Add some spacing between cells */
+            td:before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+            }
+        }
+
+        /* Add padding to sections for smaller screens */
+        .padding20 {
+            padding: 20px;
+        }
+
+        /* Add responsive styles for columns */
+        .col-md-12 {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .col-lg-6 {
+            width: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Add margin for small screens */
+        .sm-mb30 {
+            margin-bottom: 30px;
+        }
+
+        /* Add responsive styles for text alignment */
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Add styles for small borders */
+        .small-border {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+
+        /* Add styles for spacer */
+        .spacer-single {
+            margin: 20px 0;
+        }
+        #section-organised {
+            background-color: #f5f5f5; /* Set background color */
+            padding: 50px; /* Add padding for spacing */
+        }
+
+        /* Style the headings */
+        h3 {
+            color: #333; /* Set heading text color */
+            font-size: 24px; /* Set heading font size */
+            margin-top: 0; /* Remove top margin for headings */
+        }
+
+        /* Style the lists */
+        ul {
+            list-style-type: disc; /* Use bullet points for lists */
+        }
+
+        /* Style the list items */
+        li {
+            color: #0072b3; /* Set list item text color */
+            font-size: 18px; /* Set list item font size */
+            margin: 5px 0; /* Add spacing between list items */
+        }
+     .masthead {
+    background-image: url('./assets/img/bgimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Add this for positioning pseudo-element */
+}
+
+.masthead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to control the overlay's opacity */
+}
+
+.masthead h1 {
+    font-size: 2.5rem;
+    color: white; /* Change text color to white or another color that works well with the overlay */
+    z-index: 1; /* Ensure the text is above the overlay */
+}
+
+    
+            .masthead h3 {
+                font-size: 1.5rem;
+                color: #fff;
+                margin: 20px 0;
+            }
+    
+            .btn {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 25px;
+                margin: 10px;
+            }
+    
+            .bg-circle {
+                position: absolute;
+                border-radius: 50%;
+                background: #007bff; /* Circle background color */
+                opacity: 0.2;
+            }
+            .decorative-font {
+        font-family: 'Your-Decorative-Font', cursive;
+        font-size: 48px; /* Adjust the font size as needed */
+        font-weight: normal; /* You can adjust the font weight as needed */
+    }
+
+    
+            .bg-circle-1 { top: 20%; left: 10%; width: 100px; height: 100px; }
+            .bg-circle-2 { top: 30%; left: 70%; width: 80px; height: 80px; }
+            .bg-circle-3 { top: 60%; left: 20%; width: 60px; height: 60px; }
+            .bg-circle-4 { top: 80%; left: 80%; width: 120px; height: 120px; }
+        </style>
+       <script>
+        // Set the target date for the countdown (December 29)
+        const targetDate = new Date("2023-12-29T23:59:59").getTime();
+
+        // Update the countdown every second
+        const timer = setInterval(function() {
+            const currentDate = new Date().getTime();
+            const timeRemaining = targetDate - currentDate;
+
+            if (timeRemaining <= 0) {
+                // Countdown has expired
+                clearInterval(timer);
+                document.getElementById("countdown").innerHTML = "Countdown expired!";
+            } else {
+                // Calculate days, hours, minutes, and seconds
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                // Display the countdown in the HTML element
+                document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+            }
+        }, 1000); // Update every second
+    </script>
+    </head>
+    <body id="page-top" style="overflow-x: hidden;">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-7">
+                <a class="navbar-brand" href="#page-top"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <!-- Your navbar links here -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home" style="color: aliceblue; margin-right: 10px;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" style="color: aliceblue; margin-right: 10px;">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#speakers" style="color: aliceblue; margin-right: 10px;">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#schedule" style="color: aliceblue; margin-right: 10px;">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#registration" style="color: aliceblue; margin-right: 10px;">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dates" style="color: aliceblue; margin-right: 10px;">Important Dates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#asum" style="color: aliceblue; margin-right: 10px;">Abstract Submission</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="position: absolute; top: 10px; left:550px; z-index: 999; display: flex; align-items: center; justify-content: center; text-align: center;">
+                <img src="./assets/img/logo-dark.png" class="img-fluid" alt="Logo" width="125">
+            </div>
+        </nav>
+        
+        
+        
+        
+
+        
+        <header class="masthead text-center text-white" id="home" >
+            <div  class="masthead-content">
+                <div class="container px-5">
+                    <h1 style="font-size: 40px;" class="decorative-font" >International Conference on</h1>
+                    <h1 class="decorative-font"><b>COMPUTER SCIENCE AND MATHEMATICS-2023 (COMAT-2023), 29-31, DECEMBER 2023(ONLINE)</b></h1>
+                    <h1 style="font-size: 35px;" class="decorative-font">(COMAT - 2023)</h1>
+                    <h1 class="decorative-font">
+                        <img src="./assets//img/calendar.png" alt="Calendar Logo" height="75" width="75"> 29-31 December 2023
+                    </h1>
+                    <h1 class="decorative-font">
+                        <img src="./assets//img/map.png" alt="Calendar Logo" height="75" width="75"> Online
+                    </h1>
+                    <h1 class="decorative-font">&nbsp;&nbsp;<b>Event Begins in</b></h1>
+                    <h1 class="decorative-font">
+                        <img src="./assets//img/timer.png" alt="Calendar Logo" height="75" width="75"> 
+                        <h1 style="font-size: 30px;" class="decorative-font" id="countdown"></h1>
+                    </h1>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Be a participant</a>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Abstract Submission</a>
+                </div>
+            </div>
+            
+        </header>
+
+     <section id="section-organised" style="background-image: url('your-background-image.jpg'); background-size: cover; background-position: center; padding: 80px 0; color: #333; background-color: white">
+    <div style="padding: 20px; text-align: center; background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h3 style="color: #ff6600; font-size: 24px; font-weight: bold;">ORGANISED BY</h3>
+            <h2 style="font-size: 32px; font-weight: bold; margin-bottom: 10px;">NEW RESEARCH AND INNOVATION SOCIETY (NEW RAINS),</h2>
+            <h3 style="font-size: 24px;">Chennai, India</h3>
+            <h3 style="color: #ff6600; font-size: 24px; font-weight: bold; margin-top: 20px;">In association with</h3>
+        </div>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; margin-top: 20px;">
+        <div style="flex: 0 0 48%; text-align: center; background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */ background-image: url('background-image1.jpg'); background-size: cover; background-position: center;">
+            <img src="./assets/img/ghana_univ_logo.png" style="max-width: 100%; height: auto;">
+            <h3 style="font-size: 28px; font-weight: bold; margin: 10px 0;">Akenten Appiah-Menka University of Skills Training and Entrepreneurial Development (AAMUSTED),</h3>
+            <h4 style="font-size: 20px; margin: 0;">Ghana, West Africa</h4>
+        </div>
+        <div style="flex: 0 0 48%; text-align: center; background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */ background-image: url('background-image2.jpg'); background-size: cover; background-position: center;">
+            <img src="./assets//img/walchand.png" style="max-width: 100%; height: auto;">
+            <h3 style="font-size: 28px; font-weight: bold; margin: 10px 0;">Walchand Institute of Technology,</h3>
+            <h4 style="font-size: 20px; margin: 0;">Solapur, Maharashtra, India</h4>
+        </div>
+    </div>
+</section>
+
+<div id="about" class="no-bottom no-top" style="background-image: url('./assets/img/homebg.webp');background-repeat: round;">
+    <div id="top"></div> <br/>
+    <section id="section-about" class="pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 style="font-family: "Catamaran", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";"><b>About Us</b></h2>
+                    <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <h3 class="wow fadeInUp about_conf text-justify" style="font-size: 18px;"> New Rains is an emerging scientific and
+                        professional
+                        organization from India, established in the year 2023. NEW RAINS
+                        aims to connect the Research Scholars, Scientists, Academicians and Professionals from
+                        Industry. NEW RAINS will serve
+                        the International Research and Academic community through dissemination of knowledge on
+                        recent advances in various
+                        fields of Science, Engineering, Medical science, Social science, Management etc. among
+                        the students, researchers,
+                        academicians and professionals through various activities including publications and
+                        conferences.
+                    </h3>
+                    <div class="spacer-single"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 text-center mb-4">
+                    <h3 style="font-family: 'Catamaran', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';">About WIT</h3>
+                    <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                    <div class="text-left">
+                        <img src="./assets/img/wit.jpeg" alt="" class="w-100">
+                        <div class="spacer-single"></div>
+                    </div>
+                    <div class="text-left">
+                        <h3 style="font-size: 18px; font-family: 'Catamaran', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';">
+                            Shri Aillak Pannalal Digambar Jain Pathashala Trust started this college in July 1983. The Institute is affiliated to the Solapur University, Solapur and approved by the All India Council for Technical Education, New Delhi (A.I.C.T.E., New Delhi).
+                        </h3>
+                    </div>
+                </div>
+            
+                <div class="col-lg-4 col-md-12 text-center mb-4">
+                    <h3 style="font-family: 'Catamaran', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';">About AAMUSTED</h3>
+                    <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                    <div class="text-left">
+                        <img src="./assets/img/AAMUSTED.jpeg" alt="" class="w-100">
+                        <div class="spacer-single"></div>
+                    </div>
+                    <div class="text-left">
+                        <h3 style="font-size: 18px;">The Akenten Appiah-Menka University of Skills Training and Entrepreneurial Development (AAMUSTED), was established on August 27, 2020, under Act 1026 of 2020 of the Parliament of the Republic of Ghana.</h3>
+                    </div>
+                </div>
+            
+                <div class="col-lg-4 col-md-12 text-center">
+                    <h3 style="font-family: 'Catamaran', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';">Supported By RightClick</h3>
+                    <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                    <div class="text-left">
+                        <img src="./assets/img/rightclick_logo.jpg" alt="" class="w-100">
+                        <div style="font-size: 18px;"><br><h3 style="font-size: 18px;">Right Click, Singapore.</h3></div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row text-center" >
+                <div class="spacer-single" ></div>
+                <h2 class="wow fadeInUp">About the Conference</h2>
+                <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                <h3 class="wow fadeInUp about_conf text-justify" style="font-size: 18px;"> New RAINS is organizing International Conferences, Workshops and
+                    Training Programmes in collaboration with International Universities of repute and Top Institutions in India
+                    for the benefit of researchers and academic professionals in the World. Recently NEW RAINS organized a
+                    multidisciplinary conference successfully with emerging themes which was well received and over 300 scientists,
+                    academicians and industry experts from across the Universe participated. The outcomes of the presentations are
+                    being published in SCI, Scopus, Web of Science and UGC CARE journals.
+                    The second international conference is organized by NEW RAINS in association with Walchand Institute of Technology, Solapur, Maharashtra, India.
+                        Akenten Appiah-Menka University of Skills Training and Entrepreneurial Development (AAMUSTED), Ghana, West Africa. supported by Right Click, Singapore.
+                
+                    The conference will have Keynote and invited talks from International Experts from across the World.
+                    Oral and poster presentations will cover all the themes
+                </h3>
+                <div style="text-align: center;">
+                    <a href="./assets/pdf/Brochure_COMAT_2023 30.10.2023.pdf" target="_blank" class="btn-custom scroll-to abs" style="color: #fff; font-size: 14px; display: inline-block; padding: 10px 20px; border: 2px solid #007bff; border-radius: 10px; text-decoration: none; background-color: #007bff;font-size: 17px;">
+                        <b>Brochure Download</b>
+                    </a>
+                    
+                </div>
+                
+                
+                <div class="spacer-single"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-organised" class="no-top no-bottom text-dark" data-stellar-background-ratio=".2" >
+        <div class="overlay-gradient pt80 pb80">
+            <div class="container">
+                <div class="row workships_cols">
+                    <div class="col-md-4 text-left wow fadeInLeft" style="animation: fadeInLeft 1s;">
+                        <div class="padding20 sm-mb30">
+                            <h3>Current Trends in Computer Science and Engineering and its applications</h3>
+                            <ul class="text-left px-0" style="color: blue">
+                                <li>Artificial Intelligence and applications</li>
+                                <li>IoT and applications</li>
+                                <li>Deep learning and applications</li>
+                                <li>CNN and applications</li>
+                                <li>ML and applications</li>
+                                <li>Big Data</li>
+                                <li>Data science</li>
+                                <li>Machine Learning & Applications</li>
+                                <li>Software Engineering</li>
+                                <li>Digital Twin Technologies and Smart Cities</li>
+                                <li>Cyber Security</li>
+                                <li>Cloud Computing</li>
+                                <li>Data Mining</li>
+                                <li>Blockchain Technology</li>
+                                <li>Wireless Technology</li>
+                                <li>Mobile Computing</li>
+                                <li>Parallel Computing</li>
+                                <li>Quantum Computing and Cryptography</li>
+                                <li>Scientific Computing</li>
+                                <li>Cyber hacking and Cyber monitoring</li>
+                                <li>Digital forensics in intelligent data</li>
+                                <li>Big data security and Database security</li>
+                                <li>Intelligent data mining in security</li>
+                                <li>Security and fault tolerance for embedded</li>
+                                <li>Cloud-based intelligent data and security issues</li>
+                                <li>Sensor network security and solutions</li>
+                                <li>Vulnerabilities on smart contract</li>
+                                <li>Internet of Things and cyber-physical systems</li>
+                                <li>Blockchain-based security applications and challenges</li>
+                                <li>Access Control in Wireless Robotics</li>
+                                <li>Bio-inspired algorithms for secure parallel processing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 text-left wow fadeInUp" style="animation: fadeInUp 1s;">
+                        <div class="padding20 sm-mb30">
+                            <h3>Current Trends in Mathematics and its applications</h3>
+                            <ul class="text-left px-0" style="color: blue">
+                                <li>Applied Mathematics</li>
+                                <li>Algebra and Analysis</li>
+                                <li>Computational Fluid Dynamics</li>
+                                <li>Data Analysis and Statistics</li>
+                                <li>Differential Equations (ODE/PDE)</li>
+                                <li>Fuzzy Sets and Applications</li>
+                                <li>Formal Languages and Automata Theory</li>
+                                <li>Graph Theory and Applications</li>
+                                <li>Mathematical Biology</li>
+                                <li>Numerical Analysis and Optimization</li>
+                                <li>Set theory</li>
+                                <li>Probability and statistics</li>
+                                <li>Topology</li>
+                                <li>Number theory</li>
+                                <li>Inventory control</li>
+                                <li>Operation Research</li>
+                                <li>Complex Analysis</li>
+                                <li>Real Analysis</li>
+                                <li>Functional Analysis</li>
+                                <li>Difference Equations</li>
+                                <li>Fuzzy logic</li>
+                                <li>Fluid dynamics</li>
+                                <li>Mathematical Finance</li>
+                                <li>Business Mathematics</li>
+                                <li>Engineering Mathematics</li>
+                                <li>Bio-Mathematics</li>
+                                <li>Mathematical Modeling</li>
+                                <li>Statistical Quality Control</li>
+                                <li>Random Processes</li>
+                                <li>Discrete Mathematics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="speakers" style="background-image: url(./assets/img/banner_gradient_bg.jpg); background-repeat: round; color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center"><br/>
+                <h2 class="wow fadeInUp">Keynote Speakers</h2>
+                <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-3 col-sm-4 wow fadeIn">
+                <div class="profile_pic text-center sm-mb30">
+                    <figure class="picframe s2 mb30">
+                        <img src="./assets/keynote speakers/Ebenezer Bonyah .jpeg" height="170" class="img-responsive" alt="">
+                    </figure>
+
+                    <h3 style="color: wheat;">Prof. Ebenezer Bonyah</h3>
+                    <span class="subtitle">Department of Mathematics Education, 
+                        Akenten Appiah Menka University of Skills Training and Entrepreneurial Development, 
+                        Kumasi, Ghana
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="profile_pic text-center sm-mb30">
+                    <figure class="picframe s2 mb30">
+
+                        <img src="./assets//keynote speakers/Vijay Anant Athavale.jpeg" height="170" class="img-responsive" alt="">
+                    </figure>
+
+                    <h3 style="color: wheat;">Dr Vijay Anant Athavale</h3>
+                    <span class="subtitle">Principal, Walchand Institute of Technology, Solapur, Maharashtra, India</span>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="profile_pic text-center sm-mb30">
+                    <figure class="picframe s2 mb30">
+                    
+
+                        <img src="./assets//keynote speakers/Ismail Naci CANGUL.jpeg" height="170" class="img-responsive" alt="">
+                    </figure>
+                    
+
+                    <h3 style="color: wheat;">Dr. Ismail Naci CANGUL</h3>
+                    <span class="subtitle"> Bursa Uludag University
+                        Faculty of Arts and Science
+                        Department of Mathematics
+                        Gorukle 16059 Bursa/Turkey
+                    
+                    
+                    </span>
+                    
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="spacer-single"></div>
+                <h2 class="wow fadeInUp">Invited Speakers</h2>
+                <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-3 col-sm-4 wow fadeIn">
+                <div class="profile_pic text-center sm-mb30">
+                    <figure class="picframe s2 mb30">
+
+                        <img src="./assets/Invited Speakers/Dr_Thulasi_Bikku.jpeg" height="170" class="img-responsive" alt="">
+                    </figure>
+
+                    <h3 style="color: wheat;">Dr Thulasi Bikku</h3>
+                    <span class="subtitle">Associate Professor
+                        Computer Science and Engineering,
+                        Amrita School of Computing Amaravati,
+                        Amrita Vishwa Vidyapeetham,
+                        Andhra Pradesh,
+                        522503, India.
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="profile_pic text-center sm-mb30">
+                    <figure class="picframe s2 mb30">
+
+                        <img src="assets/Invited Speakers/Dr_Vaibhav_Gandhi.jpeg" height="170" class="img-responsive" alt="">
+                    </figure>
+
+                    <h3 style="color: wheat;">Dr Vaibhav Gandhi</h3>
+                    <span class="subtitle">Professor, Faculty of Information Technology and Computer Science and Director,
+                        Faculty Development and Updation (CE/IT/CA),
+                        Parul University, Gujarat.
+                        
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="profile_pic text-center sm-mb30">
+                    <figure class="picframe s2 mb30">
+
+                        <img src="assets/Invited Speakers/Dr.D_K_Singh.jpg" height="170" class="img-responsive" alt="">
+                    </figure>
+
+                    <h3 style="color: wheat;">Dr. D. K. Singh</h3>
+                    <span class="subtitle">Department of Mathematics
+                        School of Basic Sciences
+                        CSJM University, 
+                        Kanpur-208024
+                        India.
+                </span>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay=".2s">
+                    <div class="profile_pic text-center sm-mb30">
+                        <figure class="picframe s2 mb30">
+
+                            <img src="./assets/Invited Speakers/Tapsi Nagpal.jpeg" height="170" class="img-responsive" alt="">
+                        </figure>
+
+                        <h3 style="color: wheat;">Dr. Tapsi Nagpal</h3>
+                        <span class="subtitle">Associate Professor, 
+                            Department of Computer Science and 
+                            Engineering, Lingayas Vidyapeeth, Faridabad
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+             <div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay=".4s">
+                <div class="profile_pic text-center sm-mb30">
+                    <figure class="picframe s2 mb30">
+
+                        <img src="assets/Invited Speakers/Shivani Gupta.jpeg" height="170" class="img-responsive" alt="">
+                    </figure>
+
+                    <h3 style="color: wheat;">Dr Shivani Gupta</h3>
+                    <span class="subtitle"> School of Computer Science and Engineering, 
+                        Vellore Institute of Technology, Chennai, Tamil Nadu, India -600127
+                    </span>
+                    
+                </div>
+                
+            </div>
+            &nbsp; &nbsp;
+            <div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="profile_pic text-center sm-mb30">
+                    <figure class="picframe s2 mb30">
+
+                        <img src="./assets/Invited Speakers/Iranian.jpeg" height="170" class="img-responsive" alt="">
+                    </figure>
+
+                    <h3 style="color: wheat;">Dr. D. Iranian</h3>
+                    <span class="subtitle"> Prof & Head, Department of Mathematics
+                        Saveetha School of Engineering, SIMATS, Chennai
+                    
+                    
+                    </span>
+                </div>
+
+            </div>
+            
+
+
+        </div>
+        
+        
+    </div>
+</section>
+
+<section class="pt-0">
+    <div class="container committee_members">
+        <div class="row">
+            <div class="col-lg-6">
+
+
+
+                <div class="col-md-12 text-left" >
+                   
+                    <h3 class="wow fadeInUp" >INTERNATIONAL ADVISORY BOARD</h3>
+                
+                    <div class="spacer-single"></div>
+                </div>
+                <div class="col-md-12 text-left wow fadeInUp">
+                    <ol>
+                        <li><span><b>Dr. K .K.Viswanathan,</b></span> Professor, Samarkand State University, Samarkand region, Uzbekistan.
+                            </li>
+                        <li><span><b>Dr.B.Sundaravadivazhagan,</b></span>  Professor,Department of Information and Technology,
+                        University of Technology and Applied Sciences-Al Mussana, Oman.
+                        </li>
+                        <li><span><b>Oday Sabah Hussein,</b>
+                        </span> Center Lein office
+                        Iraq, Baghdad.
+                          </li>
+                          <li><span><b>Dr.Vediyappan Govindan,</b></span> 
+                            Associate Professor, Department of Mathematics, Dmi St John the Baptist University, Malawi, Central Africa.
+                          </li>
+                   
+                    </ol>
+                    <div class="spacer-single"></div>
+                </div>
+
+
+                <div class="col-md-12 text-left">
+                    <h3 class="wow fadeInUp">NATIONAL ADVISORY BOARD</h3>
+                    <div class="spacer-single"></div>
+                </div>
+                <div class="col-md-12 text-left wow fadeInUp">
+                    <ol>
+                        <li><span><b>Dr.B.Venkatachalabathy,</b></span> Vice Chancellor, Karpagam Institute of Higher
+                            Education and Research, Coimbatore, India</li>
+                       <li><span><b>Dr.N.Ganesh,</b></span> Senior Associate Professor , VIT, Chennai.
+                       </li>
+                       <li><span><b>Dr.S.Nedunchezhiyan,</b></span>  Dean, School of Computing, Bharath Institute of Higher Education and Research, Chennai, India.
+                       </li>
+                       <li><span><b>Prof. Chand A.K.B.,</b></span> Professor, Department of Mathematics, IIT, Chennai.
+                         </li>
+                         <li><span><b>Dr. Arulkumar V,</b>
+                           </span> Senior Asst.Professor Grade I,Department of Database Systems,
+                           School of Computer Science and Engineering,
+                           Vellore Institute of Technology, Vellore, Tamil Nadu, India 632014.
+                         </li>
+                         <li><span><b>Dr.J.Vinothkumar,</b>
+                           </span>  Assistant Professor
+                           Dept. of Computer Applications 
+                           Rajiv Gandhi Arts and Science college 
+                           Thavalakuppam, Puducherry.
+                         </li>
+                          <li><span><b>Dr.S.Kamalakkannan,</b> </span> Associate Professor, Department of Information Technology,
+                            School of Computing Sciences 
+                           VISTAS (Vels Institute of Science, Technology & Advanced Studies), Chennai -117.
+                         </li>
+                         <li><span><b>Dr. Minirani S,</b></span> Associate Professor in Mathematics, MPSTME,
+                            NMIMS (Deemed to be University), Mumbai, India.
+                        </li>
+                    </ol>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="col-md-12 text-left">
+
+                    <h3 class="wow fadeInUp" style="margin-bottom: 20px !important;">CONFERENCE CHAIR</h3>
+
+                </div>
+                <div class="col-md-12 text-left wow fadeInUp">
+                    <ol>
+                        <li><span><b>Dr.P.Kamaraj,</b></span><br>
+                            Dean, School of Science and Humanities, Bharath Institute of Higher Education and Research, Chennai, India<br>
+
+                        </li>
+                    </ol>
+                        <h3 class="wow fadeInUp" style="margin-bottom: 20px !important;"><br>CONFERENCE CONVENER</h3>
+                        <ol>
+                            <li><span><b>Dr.S.Balamuralitharan,</b></span><br>
+                                Research Professor,<br>
+                                NEW RAINS, Chennai, Tamil Nadu, India.<br>
+                                Email: comat2023@newrains.com<br>
+                                Cell No: +91-8838702557<br>
+                                Website: https://newrains.com/<br>
+                                Conference link:https://newrains.com/comat-2023/<br>
+                                WhatsApp link:<br>
+                                Follow this link to join my WhatsApp group: https://chat.whatsapp.com/GLdP180pKxDBudUlHUW4jL<br>
+                            </li>
+                        </ol>
+                    <div class="spacer-single"></div>
+                </div>
+
+                <div class="col-md-12 text-left">
+                    <h3 class="wow fadeInUp">ORGANIZING COMMITTEE</h3>
+                    <div class="spacer-single"></div>
+                </div>
+
+                <div class="col-md-12 text-left wow fadeInUp">
+                    <ol>
+
+                        <li><span><b>Dr Arumugam S,</b></span> Professor, Department of Computer science and engineering, Saveetha school of Engineering, Saveetha Institute of Medical and Technical sciences,Thandalam,Chennai-602105.</li>
+                        <li><span><b>Dr. K. Sakkaravarthi,</b></span> Assistant professor,
+                            Department of Mathematics, 
+                             St. Peters Engineering College, Medchal, Dhulapally, Hyderabad - 500100, Telangana, India.
+                            
+                        </li>
+
+                        <li><span><b>Dr. S. Hemalatha,</b></span> Professor, Department of Computer Science and Business Systems, 
+                            Panimalar Engineering College, Chennai, Tamil Nadu, India.
+                            
+
+                        </li>
+                        <li><span><b>Dr  E  Bhuvaneshwari,</b></span> Head/ Dept  of CSE- Cyber Security 
+                            Associate Professor 
+                            Chennai Institute of Technology.</li>
+                        <li><span><b>Dr. Krishna Pada Das,</b></span> PAssistant Professor, Department of Mathematics Mahadevananda 
+                            Mahavidyalaya Manirampore, P.O.-Barrackpore, Kol-120
+                        </li>
+
+                        <li><span><b>Ms. A. Nasreen Sultana,</b></span>Ph.D., Lecturer, department of 
+                            mathematics S.D.N.B. Vaishnav College for Women, Chromepet, Chennai.
+                        </li>
+                    </ol>
+                    <div class="spacer-single"></div>
+                </div>
+            </div>
+
+                <div class="col-md-12 text-left">
+                    <h3 class="wow fadeInUp">TECHNICAL COMMITTEE</h3>
+                    <div class="spacer-single"></div>
+                </div>
+
+                <div class="col-md-12 text-left wow fadeInUp">
+                    <ol>
+
+                         <li><span><b>Dr  V. Anjana Devi</b></span> Professor , Dept of CSE
+                            Rajalakshmi Institute of technology.
+                            </li>
+
+                        <li><span><b>Dr.A.Karunamurthy</b></span> Associate professor, Department Master of computer application, Sri Manakula Vinayagar Engineering College(Autonomous), Puducherry,India.</li>
+
+                        <li><span><b>Dr.S.Sivasankaran,</b></span> Professor and Head, Department of Computer Science and Engineering,Christ college of Engineering and Technology, Puducherry.</li>
+
+                        <li><span><b>Mr.P. Rajapandian,</b></span> Associate Professor, Department of MCA, Sri Manakula Vinayagar Engineering College, Puducherry.</li>
+
+                        <li><span><b>Dr. A. Ramalingam,</b></span> Professor and Head,
+                            Department of Computer Applications(MCA Programme),SRI Manakula Vinayagar Engineering College (An Autonomous Institution),Madagadipet, Pondicherry.
+                            </li>
+
+                        <li><span><b>Mr.R.Ramakrishnan,</b></span> Associate Professor,
+                            Department of MCA, SMVEC, Pondicherry.
+                            </li>
+
+                        <li><span><b>Mrs.K.Rajasri,</b></span> Associate professor, Department of computer science and Engineering, Christ college of Engineering and Technology, Puducherry.</li>
+
+                        <li><span><b>Dr. T. Amalraj Victoire,</b></span> Associate Professor, Department Master of Computer Application, Sri Manakula Vinayagar Engineering College, Puducherry.</li>
+
+                        <li><span><b>Mrs.M.Vasuki,</b></span> Associate professor, Department Master of Computer Application, Sri Manakula Vinayagar Engineering College,  Puducherry.</li>
+                        
+                        <li><span><b>Dr. L.Ganesh Babu,</b></span> Assistant Professor (SG) , Department of Robotics and Automation, Rajalakshmi Engineering College, Chennai. 
+                            </li>    
+                        </ol>
+                    <div class="spacer-single"></div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+<div style="font-family: Arial, sans-serif; background-color: white; text-align: center; " id="schedule">
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #3498db; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+        <h2 style="color: #fff;">Schedule</h2>
+        <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+            <div id="day1" style="cursor: pointer; background-color: orangered; padding: 10px; border-radius: 5px;" onclick="selectDay(1)">
+                <h3><b style="color: #fff;">Day 01</b></h3>
+                <p style="color: white;"><i>29 December, 2023</i></p>
+            </div>
+            <div id="day2" style="cursor: pointer; background-color: orangered; padding: 10px; border-radius: 5px;" onclick="selectDay(2)">
+                <h3><b style="color: #fff;">Day 02</b></h3>
+                <p style="color: white;"><i>30 December, 2023</i></p>
+            </div>
+            <div id="day3" style="cursor: pointer; background-color:  orangered; padding: 10px; border-radius: 5px;" onclick="selectDay(3)">
+                <h3><b style="color: #fff;">Day 03</b></h3>
+                <p style="color: white;"><i>31 December, 2023</i></p>
+            </div>
+        </div>
+        <div id="dayContent">
+            <!-- Content for the selected day will appear here -->
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    function selectDay(day) {
+        const dayContent = document.getElementById('dayContent');
+        dayContent.innerHTML = '';
+
+        // Reset background colors for all days
+        document.getElementById('day1').style.backgroundColor = ' orangered';
+        document.getElementById('day2').style.backgroundColor = ' orangered';
+        document.getElementById('day3').style.backgroundColor = ' orangered';
+
+        switch (day) {
+            case 1:
+                dayContent.innerHTML = '<h3 style="color:#fff">Schedule(Tentative)</h3>';
+                document.getElementById('day1').style.backgroundColor = ' #27ae60'; // Change background color for selected day
+                break;
+            case 2:
+                dayContent.innerHTML = '<h3 style="color:#fff">Schedule(Tentative)</h3>';
+                document.getElementById('day2').style.backgroundColor = ' #27ae60'; // Change background color for selected day
+                break;
+            case 3:
+                dayContent.innerHTML = '<h3 style="color:#fff">Schedule(Tentative)</h3>';
+                document.getElementById('day3').style.backgroundColor = ' #27ae60'; // Change background color for selected day
+                break;
+        }
+    }
+</script>
+<br/>
+
+<section id="registration" class="no-top no-bottom" style="background-image: url(./assets/img/counter-overley.png); color: white;">
+    <div class="overlay-gradient pt80 pb80">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="wow fadeInUp">Registration</h2>
+                    <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                    <div class="spacer-single"></div>
+                </div>
+
+            </div>
+
+            <div class="row" >
+
+                <div class="col-md-12 wow fadeInUp">
+
+                    <div class="row">
+
+                        <div class="col-md-8 registration_info">
+                            <h3 class="m-0" style="color: white;"> Best paper awards</h3>
+                            <div class="col-md-12 text-center" style="color: white;">
+                    <h3 class="wow fadeInUp about_conf text-justify" style="font-size: 18px; white-space: nowrap; width: 1130px; color: white;"> Best papers will be selected by an evaluation committee in every stream and cash prizes will be awarded.
+
+
+                    </h3>
+                    <div class="spacer-single"></div>
+                </div>
+
+                            <div class="spacer-single"></div>
+                            <h3 class="m-0" style="color: white;">Participation Certificates
+                            </h3>
+                            <div class="col-md-12 text-center">
+                                <h3  style="font-size:18px; width: 1130px; text-align: left; color: white;"> Participation certificates will be issued after the conference to all the Abstract shall be submitted online in the website. Registration as a deligate shall be done using the google sheet available in the website.
+            
+            
+                                </h3>
+                                <div class="spacer-single"></div>
+                            </div>
+                            <div class="spacer-single"></div>
+                            
+                            <h3 class="m-0" style="color: white;">Publication
+                            </h3>
+                            <div class="col-md-12 text-center">
+                                <h3 class="wow fadeInUp about_conf text-justify" style="font-size:18px; width: 1130px; text-align: left; color: white;"> All submitted papers will be reviewed by the technical committee of the conference (including similarity index check). The Proceedings containing the abstracts of all accepted papers will be released on the first day of the conference. Furthermore, all the selected papers will be peer-reviewed by the experts of the specialized area and recommended for journal review. At least one of the authors of the selected paper should register and present the paper in the respective conference venue/ online mode. All the selected Abstracts will be published as in the Conference proceedings with ISBN number during the conference. All the selected peer reviewed full papers will be published in SCI/ SCIE/ ESCI/ SCOPUS/ Web of Science (UGC CARE List-II) and UGC CARE List-I journals (upon payment of Article Processing Charge, as per journal norms).
+            
+            
+                                </h3>
+                                <div class="spacer-single"></div>
+                            </div>
+                            
+                            <section id="awardCategories" style="color: blue;">
+                                <h3 class="m-0" style="color: white;">Our Journal Partner</h3></section><br/>
+                                <table>
+                                    <thead style="color: green;">
+                                        <tr id="tle">
+                                            <tr>
+                                                <td><b>Mode of Presentation:</b></td>
+                                                <td style="color: blue;">Paper presentation* (Oral/Poster-online)</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color: aliceblue;"><b>Faculty members/Research Scholars:</b></td>
+                                                <td style="color: blue; background-color: aliceblue;">Rs.500</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Students:</b></td>
+                                                <td style="color: blue;">Rs.500</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color: aliceblue;"><b>Industry:</b></td>
+                                                <td style="color: blue; background-color: aliceblue;">Rs.500</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Delegates from other countries:</b></td>
+                                                <td style="color: blue;">USD 70</td>
+                                            </tr>
+                                        </tr>
+                                   
+                                    </tbody>
+                                    
+                                </table>
+                            </section>
+<br/><br/>
+                            
+                            <h2 class="wow fadeInUp" style="text-align: center;">Payment Details</h2>
+                            <div style="border: 1px solid #ccc; padding: 10px; background-color: #f5f5f5; margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+                                
+                                <div>
+                                    
+                                    <p style="font-size: 20px; color: #555; text-align: left; margin: 0;">
+                                        <strong>Name:</strong> S.Balamuralitharan
+                                        <br>
+                                        <strong>Bank Name:</strong> Punjab National Bank, Selaiyur, Chennai.
+                                        <br>
+                                        <strong>A/C No:</strong> 4557000400026962
+                                        <br>
+                                        <strong>IFSC Code:</strong> PUNB0455700
+                                        <br>
+                                        <strong>MICR Code:</strong> 600024038
+                                        <br>
+                                        <strong>Account Type:</strong> Saving Account
+                                    </p>
+                                </div>
+                                <div style="margin-left: 10px;"> <!-- Adjust margin-left to control the space between content and image -->
+                                    <img src="./assets/img/QR.jpg" height="400">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                                
+                                
+                                <p style="font-size: 16px; color: #555; margin-top: 10px;">
+                                  
+                                </p>
+                                </div>
+                                
+                            </div>
+                            
+                           
+                            
+
+
+                           
+                        </div>
+                       
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer-double"></div>
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-4 contact-info">
+                <div class="wm-1"></div>
+                <i class="icon-map id-color size40 mb20"></i>
+                <img src="./assets/img/location.png" height="80">
+                <h3>Venue</h3>
+                <h5>Chennai, India</h5>
+            </div>
+        
+            <div class="col-lg-4 col-md-4 contact-info">
+                <div class="wm-1"></div>
+                <i class="icon-phone id-color size40 mb20"></i>
+                <img src="./assets/img/call.png" height="80">
+                <h3>Call Us</h3>
+                <p style="font-weight: 500;">+91-8838702557</p>
+            </div>
+        
+            <div class="col-lg-4 col-md-4 contact-info">
+                <div class="wm-1"></div>
+                <i class="icon-envelope id-color size40 mb20"></i>
+                <img src="./assets/img/email.png" height="80">
+                <h3>Email Us</h3>
+                <p style="font-weight: 500;">comat2023@newrains.com</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+</section>
+<br/>
+
+<div>
+
+
+<section id="dates" style="text-align: center; "><br/>
+    <h2 class="wow fadeInUp" style="text-align: center; ">Important Dates</h2>
+
+    <div style="background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin: 10px 0; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+        <ul style="list-style-type: disc; list-style-color: red; margin: 0; padding-left: 20px;">
+            <h3><li style="font-size: 18px; color: #0072b5; line-height: 1.5;">Last date for Abstract Submission: <strong style="font-weight: bold;">20.11.2023</strong></li>
+            <li style="font-size: 18px; color: #0072b5; line-height: 1.5;">Intimation Regarding Acceptance: <strong style="font-weight: bold;">30.11.2023</strong></li>
+            <li style="font-size: 18px; color: #0072b5; line-height: 1.5;">Last date for Registration: <strong style="font-weight: bold;">01.12.2023</strong></li>
+            <li style="font-size: 18px; color: #0072b5; line-height: 1.5;">Last date for Submission of full paper: <strong style="font-weight: bold;">15.12.2023</strong></li></h3>
+        </ul>
+    </div>
+    
+    
+    
+</section>
+<br/>
+
+
+<div id="asum" style="background-image: url(./assets/img/cta_bg.jpg); background-repeat: round;"><br/>
+<h2 class="wow fadeInUp" style="text-align: center; color: wheat;">Submission of full paper / Abstract</h2>
+
+<section id="section-important-dates" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
+    
+
+                        <div class="col-md-12 wow fadeInUp abstract_section text-center">
+                            <h3 style="color: wheat;">All full Papers/Abstracts should be submitted electronically to
+                                <a href="mailto:comat2023@newrains.com" style="color: white; text-decoration: none;">comat2023@newrains.com</a>
+                            </h3>
+
+                           <h3 > <a href="./assets/pdf/Abstract template COMAT-2023.pdf " class="btn-custom scroll-to abs" style="color: #fff; font-size: 14px;display: inline-block; text-decoration: none;">
+                                Abstract template Download</a>
+                                <a href="./assets/pdf/ppt_template_COMAT_2023.pptx" class="btn-custom scroll-to abs" style="color: #fff; font-size: 14px;display: inline-block; text-decoration: none;">
+                                PPT presentation template Download</a>
+                                <a href="./assets/pdf/Poster Template_COMAT_2023.pdf" class="btn-custom scroll-to abs" style="color: #fff; font-size: 14px;display: inline-block; text-decoration: none;">
+                                Poster presentation template Download</a>
+                            <a href="./assets/pdf/Brochure_COMAT_2023  30.10.2023.pdf" target="_blank" class="btn-custom scroll-to " style="color: #fff; font-size: 14px;display: inline-block; text-decoration: none;">
+                                Brochure Download</a>
+                                <a href="./assets/pdf/COMAT-2023 JOURNALS LIST.pdf" target="_blank" class="btn-custom scroll-to " style="color: #fff; font-size: 14px;display: inline-block; text-decoration: none;">
+                                List of Journals download</a></h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container-fluid px-5"> <!-- Use "container-fluid" for full width -->
+                <div class="row align-items-center"> <!-- Use "align-items-center" to vertically center content -->
+                    <div class="col-md-6 text-white"> <!-- Use "col-md-6" to take up half of the width -->
+                        <p class="m-0">
+                            <span style="font-size: 18px;display: flex;align-items: center;justify-content: center;">Copyright 2023 &copy; NEWRAINS All Rights Reserved</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-white"> <!-- Use "text-center" to center text content -->
+                        <p class="m-0"> <!-- Remove "text-right" to center-align the content -->
+                            <a href="#" class="text-white" target="_blank">
+                                <i class="fab fa-facebook" style="font-size: 24px; margin-right: 10px;"></i>
+                            </a>
+                            <a href="#" class="text-white" target="_blank">
+                                <i class="fab fa-twitter" style="font-size: 24px; margin-right: 10px;"></i>
+                            </a>
+                            <a href="#" class="text-white" target="_blank">
+                                <i class="fab fa-linkedin" style="font-size: 24px; margin-right: 10px;"></i>
+                            </a>
+                            <a href="#" class="text-white" target="_blank">
+                                <i class="fab fa-youtube" style="font-size: 24px;"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

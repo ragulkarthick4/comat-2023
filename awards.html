@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="New Rains">
+
+    <!-- ========== Page Title ========== -->
+    <title>New Research And Innovation Society (NEWRAINS)</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/elegant-icons.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
+
+    <style>
+        /* Basic CSS styles, customize as needed */
+        #awardCategories {
+            color: blue;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .text-column {
+            flex-basis: 60%;
+            padding: 10px;
+        }
+
+        .image-column {
+            flex-basis: 20%;
+            padding: 10px;
+            animation: moveImage 0.5s infinite alternate;
+        }
+
+        @keyframes moveImage {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(20px); /* Adjust the distance and direction as needed */
+            }
+        }
+
+        .sec2{
+            color: green;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: rgba(146, 123, 46, 0.39);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        ul, ol {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color:black;
+            color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        #pc{
+            color: blue;
+        }
+
+        /* Style the table header cells */
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Style odd and even rows differently for better readability */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #tle{
+            color: green;
+        }
+
+        /* Add responsive styling for small screens */
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th {
+                text-align: left;
+            }
+
+            /* Hide table headers (labels) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+            }
+
+            td {
+                /* Display each cell as a block */
+                display: block;
+                text-align: right; /* Align the cell content right for small screens */
+            }
+
+            /* Add some spacing between cells */
+            td:before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+    <!-- Start Header Top 
+        ============================================= -->
+    <div class="top-bar-area bg-light text-dark">
+        <div class="container">
+            <div class="topbar-info">
+                <div class="row">
+                    <div class="topbar-social col-lg-8">
+                    </div>
+                    <div class="top-address col-lg-4">
+                        <ul class="text-right" style="margin-top: -10px;"> <!-- Adjust the margin-top value as needed -->
+                            <li><i class="icon_phone"></i>+91-8838702557</li>
+                            <li><i class="icon_mail"></i>info@newrains.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-sticky bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo"
+                            alt="Logo"></a>
+                </div>
+                <!-- End Header Navigation -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                        
+                        <li class="dropdown">
+                            <a href="https://newrains.com/">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="conferences.html">Conferences</a>
+                        </li>
+                        <li>
+                            <a href="awards.html">Awards</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="members.html">Membership</a>
+                        </li>
+                        <li>
+                            <a href="journals.html">Journals</a>
+                        </li>
+                        <li>
+                            <a href="officebeares.html">Society</a>
+                        </li>
+                        <li>
+                            <a href="books.html">Books</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <!-- End Navigation -->
+    </header>
+
+    <div class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light"
+    style="background-image: url(assets/img/awards.webp);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+</div>
+<section id="awardCategories" style="color: blue; display: flex; flex-wrap: wrap;">
+    <div style="flex-basis: 50%; padding: 10px;">
+        <h2>Award Categories</h2><br/>
+        <ul>
+            <!-- List of awards -->
+            <li>Research Excellence Award-2023</li>
+            <li>Life Time Achievement Award-2023</li>
+            <li>Life Time Achievement Award-2023</li>
+            <li>Best Publication Award-2023</li>
+            <li>Best Teacher Award-2023</li>
+            <li>Young Researcher Award-2023</li>
+            <li>Best Author Award-2023</li>
+            <li>Best Principal Award-2023</li> 
+            <li>Best Writer Award-2023</li>
+            <li>Best Leadership Award-2023</li>
+            <li>Best Women Leadership Award-2023</li>
+            <li>HOD of the year Award-2023</li>
+            <li>Best placement trainer Award</li>
+            <li>Best Academic Department Award</li>
+            <li>Young Achiever Award</li>
+            <li>Best Mentor Award</li>
+            <li>Best Placement Officer</li>
+            <li>Best Librarian Award</li>
+            <li>Best Academician Award</li>
+            <li>Best IPR holder Award</li>
+            <li>Best NSS/NCC Coordinator Award</li>
+            <li>Best Environmentalist Award</li>
+        </ul>
+    </div>
+    <div class="image-column" style="flex-basis: 25%; padding: 10px;">
+        <!-- Image for the second column -->
+        <img src="assets/img/a1.jpg" alt="Image 2">
+        <img src="assets/img/a5.jpg" alt="Image 2">
+    </div>
+    <div style="flex-basis: 25%; padding: 10px;">
+        
+    </div>
+</section>
+
+    <section id="pc">
+        <h2>Processing of awards</h2>
+        <ol>
+            <li>
+                <ul>
+                    <li>Nomination through website</li>
+                    <li>Screening of nominations</li>
+                    <li>Selection of winners</li>
+                    <li>Intimation to the winners</li>
+                    <li>Presentation of Awards</li>
+                </ul>
+            </li>
+            <!-- Add requirements for other award categories here -->
+        </ol>
+    </section>
+
+    <section class="sec2">
+        <h2>Eligibility for Award</h2>
+        <p id="pc">Nominees should have a degree in the field of Science, Engineering, Medical science, Applied science, Pharmacy, Nursing, Agriculture Science, Veterinary Science, Social Science and Management, Arts etc.</p>
+    </section>
+
+    <section id="awardsCover" style="color: blue;">
+        <h2>Awards Cover</h2>
+        <ul>
+            <li>Brass Memento with the Awardee’s Name and award details</li>
+            <li>Certificate with the selected Award Title (Soft Copy/ Hard Copy)</li>
+            <li>Publication of Awardees details along with photo on the NEW RAINS Website</li>
+            <li>NEW RAINS Membership card</li>
+            <li>Processing Time: TWO Weeks including Delivery</li>
+            <!-- Add other award cover details here -->
+        </ul>
+    </section>
+    <!-- Add other sections as needed -->
+    <section id="awardCategories" style="color: blue;">
+        <h2>Award Categories and Requirements</h2>
+        <table>
+            <thead>
+                <tr id="tle">
+                    <th>Award Category</th>
+                    <th>Requirements</th>
+                    <th>Documents Required</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Award Category">1.Research Excellence Award</td>
+                    <td data-label="Requirements">Publications in Impact Journals/Patents/Projects ongoing or completed</td>
+                    <td data-label="Documents Required">Publication details (List of publications in Journals with title, journal name, vol.no., iss.no., year/Patent published details or grant certificate/Project sanction lr. and status.</td>
+                </tr>
+                <tr>
+                    <td data-label="Award Category">2.Life Time Achievement Award</td>
+                    <td data-label="Requirements">Age:above 35
+
+                    </td>
+                    <td data-label="Documents Required">List of achievements with documents.</td>
+                </tr>
+                <tr>
+                    <td data-label="Award Category">3.Best Publication Award</td>
+                    <td data-label="Requirements">Publication in high impact journal.
+                    </td>
+                    <td data-label="Documents Required">Pdf of the published article.</td>
+                </tr>
+                <tr>
+                    <td data-label="Award Category">4.Best Teacher Award</td>
+                    <td data-label="Requirements">Minimum 5 years of experience in Teaching in Higher Education or School Education.
+                    </td>
+                    <td data-label="Documents Required">Proof of experience and achievements.</td>
+                </tr>
+                <tr>
+                    <td data-label="Award Category">5.Young Researcher Award</td>
+                    <td data-label="Requirements">Age:below 35</td>
+                    <td data-label="Documents Required">List of publications with proof.
+                    </td>
+                
+                    <tr>
+                        <td data-label="Award Category">6.Best Author Award</td>
+                        <td data-label="Requirements">Book publication </td>
+                        <td data-label="Documents Required">Title of the book, Proof of the book publication</td>
+                
+                        <tr>
+                            <td data-label="Award Category">7.Best Principal Award</td>
+                            <td data-label="Requirements">Nominee should be in service as Principal of Higher Education Institutions/Schools
+                            </td>
+                            <td data-label="Documents Required">List of achievements for upliftment of the students/institutions.</td>
+                        </tr>    </tr>
+                    <tr>
+                        <td data-label="Award Category">8.Best Writer Award</td>
+                        <td data-label="Requirements">No qualification required. Publication of  successful books.</td>
+                        <td data-label="Documents Required">List of books/proof of publication</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Award Category">9.Best Leadership Award
+                        </td>
+                        <td data-label="Requirements">Leadership in any organization/activities</td>
+                        <td data-label="Documents Required">Proof of service and achievements.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Award Category">10.Best Women Leadership Award</td>
+                        <td data-label="Requirements">Women leader in any organization/activities
+                        </td>
+                        <td data-label="Documents Required">Proof of service and achievements.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Award Category">11.HOD of the year Award</td>
+                        <td data-label="Requirements">Accredited departments/Placement record/Student placement/Higher studies for students
+                        </td>
+                        <td data-label="Documents Required">Details of accreditation/placement/higher studies/department publications/department research projects</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Award Category">12.Best placement trainer Award</td>
+                        <td data-label="Requirements">Placement record</td>
+                        <td data-label="Documents Required">Proof of placement</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Award Category">13.Best Academic Department Award</td>
+                        <td data-label="Requirements">Programmes/Accreditation</td>
+                        <td data-label="Documents Required">No. of academic programmes/NBA,NAAC/ABET accreditation record</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Award Category">14.Young Achiever Award</td>
+                        <td data-label="Requirements">Academic /Research achievements/Social service</td>
+                        <td data-label="Documents Required">Teaching learning innovation/100% result/Publications/Public service</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Award Category">15.Best Mentor Award</td>
+                        <td data-label="Requirements">Student placement/higher studies</td>
+                        <td data-label="Documents Required">No. of students placed under his/her mentorship, no. of students got higher studies opportunities</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Award Category">16.	Best Placement Officer</td>
+                        <td data-label="Requirements">High no. of placements/Placement in top companies</td>
+                        <td data-label="Documents Required">Proof of placement record</td>
+                    </tr></tr>
+                <tr>
+                    <td data-label="Award Category">17.Best Librarian Award</td>
+                    <td data-label="Requirements">E learning resouces, Digital library, support to students</td>
+                    <td data-label="Documents Required">Proof of resources created during his/her tenure</td>
+                </tr>
+                <tr>
+                    <td data-label="Award Category">18.Best Academician Award</td>
+                    <td data-label="Requirements">Minimum 20 yrs academic experience/ Academic achievements</td>
+                    <td data-label="Documents Required">Academic record</td>
+                </tr>
+                <tr>
+                    <td data-label="Award Category">19.Best IPR holder Award</td>
+                    <td data-label="Requirements">Granted patents</td>
+                    <td data-label="Documents Required">Patent certificates</td>
+                </tr>
+                <tr>
+                    <td data-label="Award Category">20.Best NSS/NCC Coordinator Award
+                    </td>
+                    <td data-label="Requirements">NSS/NCC activities
+                    </td>
+                    <td data-label="Documents Required">List of activities during his/her tenure</td>
+                </tr>
+
+                <tr>
+                    <td data-label="Award Category">21.Best Environmentalist Award</td>
+                    <td data-label="Requirements">Environment club coordinators/ Environmental activities</td>
+                    <td data-label="Documents Required">Activities/achievements</td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </section>
+
+    <!-- <section id="awardCategories" style="color: blue;">
+        <h2>List of Awards</h2>
+        <table>
+            <thead>
+                <tr id="tle">
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Applications</th>
+                    <th>Awards Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Best Actor</td>
+                    <td>10</td>
+                    <td>Film</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Best Actress</td>
+                    <td>8</td>
+                    <td>Film</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Best Director</td>
+                    <td>5</td>
+                    <td>Film</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Best New Artist</td>
+                    <td>15</td>
+                    <td>Music</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </section> -->
+    <section style="background-color: #f7f7f7; padding: 20px; border: 1px solid #ddd; border-radius: 5px;">
+        <h2>Award Category Registration Link</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1ZqA43_VJseyttbrHDYH1GJt0A3QZBQpx-o17wZkVRFqxQg/viewform?usp=sf_link" style="text-decoration: none; color: #007bff; font-size: 20px; display: block; margin-top: 10px;">Click here to register</a>
+    </section>
+    
+    <section>
+        <h2>Payment Details</h2>
+        <div style="border: 1px solid #ccc; padding: 10px; background-color: #f5f5f5; margin-top: 10px;">
+            <p style="font-size: 16px; color: #555;">
+                <strong>Name:</strong> S.Balamuralitharan
+                <br>
+                <strong>Bank Name:</strong> Punjab National Bank, Selaiyur, Chennai.
+                <br>
+                <strong>A/C No:</strong> 4557000400026962
+                <br>
+                <strong>IFSC Code:</strong> PUNB0455700
+                <br>
+                <strong>MICR Code:</strong> 600024038
+                <br>
+                <strong>Account Type:</strong> Saving Account
+            </p>
+        </div>
+        <p style="font-size: 16px; color: #555; margin-top: 10px;">
+            <!-- <em>OR</em>
+            <br>
+            <strong>Accepting payments via:</strong> Google Pay, Phonepe, Paytm
+            <br>
+            <strong>Contact Person:</strong> S. Balamuralitharan
+            <br>
+            <strong>Contact Number:</strong> 9841922575
+        </p> -->
+    </section>
+    
+
+     <!-- Start Footer 
+        ============================================= -->
+        <footer class="py-4 text-light">
+            <div class="container">
+    
+                <!-- Start Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="row align-center">
+                        <div class="col-lg-5">
+                            <p>&copy; Copyright 2023. Newrains All Rights Reserved</p>
+                        </div>
+                        <div class="col-lg-2 footerlogo">
+                            <img src="assets/img/logo-light.png" alt="FooterLogo" />
+                        </div>
+                        <div class="col-lg-5 text-right">
+                            <ul class="text-right d-flex justify-content-end footersocial_widget">
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Footer Bottom -->
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <script src="assets/js/jquery-1.12.4.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/modernizr.custom.13711.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/progress-bar.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/count-to.js"></script>
+        <script src="assets/js/YTPlayer.min.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/loopcounter.js"></script>
+        <script src="assets/js/bootsnav.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+</html>

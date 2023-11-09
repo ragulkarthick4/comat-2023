@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>(COMAT - 2023)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEWRAINS Conferences">
+    <meta name="author" content="">
+
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+    
+	<![endif]-->
+
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/color.css" type="text/css">
+    <link rel="stylesheet" href="css/colors/orange.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/colors/gradient-1.css" type="text/css"> -->
+
+    <!-- background -->
+    <link rel="stylesheet" href="css/bg.css" type="text/css">
+   <style>
+    .cdown {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+/* Style for individual countdown elements (hours, mins, secs) */
+.cdown span {
+    display: inline-block;
+    border: 2px solid #e86ff8; /* You can change the border styles as needed */
+    padding: 5px 10px; /* Adjust padding to your liking */
+    margin: 0 5px; /* Add some spacing between elements */
+  }
+
+   </style>
+
+
+</head>
+
+<body id="homepage">
+
+    
+
+    <div id="wrapper">
+
+        <!-- header begin -->
+        <header style="background-color: #0867a7;">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="index.html">
+                                <img class="logo" src="images/logo-light.png" alt="">
+                                <img class="logo-2" src="images/logo-dark.png" alt="">
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- small button begin -->
+                        <span id="menu-btn"></span>
+                        <!-- small button close -->
+
+                        <!-- mainmenu begin -->
+                        <nav>
+                            <ul id="mainmenu">
+                                <li><a class="active" href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="speakers.html">Speakers</a></li>
+                                <li><a href="schedule.html">Schedule</a></li>
+                                <li><a href="registration.html">Registration</a></li>
+                                <li><a href="dates.html">Important Dates</a></li>
+                                <li><a href="abstractsubmission.html">Abstract Submission</a></li>
+                                <!-- <li><a href="#section-sponsors">Sponsors</a></li> -->
+                                <!-- <li><a href="postersubmission.html">Poster Submission</a></li>
+                                <li><a href="best paper presentations.html">Best paper presentations</a></li> -->
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <!-- mainmenu close -->
+
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <!-- content begin -->
+        <div id="content" class="no-bottom no-top">
+            <div id="top"></div>
+
+            <!-- section begin -->
+            <section id="section-intro" class="full-height relative owl-slide-wrapper no-top no-bottom text-white">
+                <div class="overlay-gradient">
+
+                    <!-- <div class="owl-slider-nav">
+                        <div class="next"></div>
+                        <div class="prev"></div>
+                    </div> -->
+
+                    <div id="custom-owl-slider">
+                        <img src="/comat-2023/images/comat-home-page.jpg" alt="">
+                    </div>
+
+                    <div class="center-y relative">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="spacer-half sm-hide"></div>
+                                    <div class="spacer-double sm-hide"></div>
+                                    <h3>International Conference on</h3>
+                                    <h1>COMPUTER SCIENCE AND MATHEMATICS-2023 (COMAT-2023),
+                                        29-31, DECEMBER 2023(ONLINE)
+                                    </h1>
+                                    <div class="spacer-single"></div>
+                                    <h3>(COMAT - 2023)</h3>
+
+                                    <div class="subtitle s2"><span><i class="fa fa-calendar-o orange"></i>29-31
+                                            December 2023</span>
+                                        <span><i class="fa fa-map-marker orange"></i>Online</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 text-center">
+                                    <div class="inline-block md-float-right">
+                                        <div class="spacer-single sm-hide"></div>
+                                        <div class="spacer-double"></div>
+                                        <div class="subtitle s3 mb20"><h1>Event Begins in</h1></div>
+                                        <div class="cdown">
+                                        
+
+
+                                            <div id="countdown"></div>
+
+                                            <script>
+                                                // Set the target date and time for the countdown (YYYY, MM, DD, HH, MM, SS)
+                                                const targetDate = new Date("2023-12-29T23:59:59").getTime();
+                                        
+                                                // Update the countdown every 1 second
+                                                const interval = setInterval(function() {
+                                                    const now = new Date().getTime();
+                                                    const distance = targetDate - now;
+                                        
+                                                    if (distance <= 0) {
+                                                        clearInterval(interval);
+                                                        document.getElementById("countdown").innerHTML = "Countdown expired!";
+                                                    } else {
+                                                        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                        
+                                                        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                                                    }
+                                                }, 1000);
+                                            </script>   
+                                            
+
+
+                                            
+                                          </div>
+                                        <div class="spacer-single"></div>
+                                        <div class="clearfix"></div>
+                                        <a href="#section-register" class="btn-custom scroll-to">Be a Participant</a>
+                                        <a href="#section-important-dates" class="btn-custom scroll-to abs">Abstract
+                                            Submission</a>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- section close -->
+
+
+
+
+            <!-- section begin -->
+          
+            <section id="section-organised" style=" background-size: cover; background-position: center; padding: 80px 0; color: #333;">
+                <div style=" padding: 20px; text-align: center;">
+                    <div style="max-width: 800px; margin: 0 auto;">
+                        <h3 style="color: #ff6600; font-size: 24px; font-weight: bold;">ORGANISED BY</h3>
+                        <h2 style="font-size: 32px; font-weight: bold; margin-bottom: 10px;">NEW RESEARCH AND INNOVATION SOCIETY (NEW RAINS),</h2>
+                        <h3 style="font-size: 24px;">Chennai, India</h3>
+                        <h3 style="color: #ff6600; font-size: 24px; font-weight: bold; margin-top: 20px;">In association with</h3>
+                    </div>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; margin-top: 20px;">
+                    <div style="flex: 0 0 48%; text-align: center;">
+                        <img src="images/ghana_univ_logo.png" style="max-width: 100%; height: auto;">
+                        <h3 style="font-size: 28px; font-weight: bold; margin: 10px 0;">Akenten Appiah-Menka University of Skills Training and Entrepreneurial Development (AAMUSTED),</h3>
+                        <h4 style="font-size: 20px; margin: 0;">Ghana, West Africa</h4>
+                    </div>
+                    <div style="flex: 0 0 48%; text-align: center;">
+                        <img src="images/walchand.png" style="max-width: 100%; height: auto;">
+                        <h3 style="font-size: 28px; font-weight: bold; margin: 10px 0;">Walchand Institute of Technology,</h3>
+                        <h4 style="font-size: 20px; margin: 0;">Solapur, Maharashtra, India</h4>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- section close -->
+
+
+
+
+
+
+
+
+
+
+
+            <!-- section begin -->
+
+           
+            <!-- section begin -->
+            <!-- <section id="section-sponsors" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
+                <div class="overlay-gradient pt80 pb80">
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h2 class="wow fadeInUp">Sponsors</h2>
+                                    <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                                    <div class="spacer-single"></div>
+                                </div>
+                                <div class="col-md-12 text-center wow fadeInUp">
+                                    <div class="owl-carousel owl-sponsors ">
+                                        <div class="item"><img src="images/logo/1.png" alt=""></div>
+                                        <div class="item"><img src="images/logo/2.png" alt=""></div>
+                                        <div class="item"><img src="images/logo/3.png" alt=""></div>
+                                        <div class="item"><img src="images/logo/4.png" alt=""></div>
+                                        <div class="item"><img src="images/logo/5.png" alt=""></div>
+                                        <div class="item"><img src="images/logo/6.png" alt=""></div>
+                                        <div class="item"><img src="images/logo/7.png" alt=""></div>
+                                        <div class="item"><img src="images/logo/8.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- section close -->
+
+
+
+        </div>
+        <!-- content close -->
+
+        <!-- footer begin -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 sm-text-center sm-mb10">
+                        <div class="mt10">&copy; Copyright 2023 - NEWRAINS All Rights Reserved </div>
+                    </div>
+
+                    <div class="col-md-6 text-right sm-text-center">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-youtube fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- footer close -->
+
+        <a href="#" id="back-to-top"></a>
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+
+        <div id="floating-icon" class="sm-hide">
+            <a href="#section-register" class="scroll-to bg-orange"><i class="fa fa-pencil"></i> Register</a>
+            <span class="scroll-to bg-pink"><i class="fa fa-phone"></i> +91-8838702557</span>
+        </div>
+
+    </div>
+
+zz
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/countdown-custom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc5d1RS_0yWJ1Hyw2hGWfbRZ9KKaxFAZo"></script>
+    <script src="js/map.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/validation.js"></script>
+
+</body>
+
+</html>

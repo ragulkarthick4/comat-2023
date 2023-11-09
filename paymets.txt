@@ -1,0 +1,7 @@
+Payment: Account Details:
+Name: S.Balamuralitharan
+Bank Name: Punjab National Bank, Selaiyur, Chennai.
+A/C No: 4557000400026962
+IFSC Code: PUNB0455700
+MICR Code: 600024038
+Account type: Saving Account
